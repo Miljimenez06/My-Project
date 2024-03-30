@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+    body {
+      background-image: url('imagenes/rick.jpg');
+      background-size: 52%; /* Reduce el tamaño de la imagen al 50% */
+      background-blend-mode: overlay;
+      /*background-repeat: no-repeat;
+      /*background-position: center; /* Centra la imagen de fondo */
+
+    }
+    #container {
+    width: 500px;
+      height: 500px;
+      position: relative;
+      border: 1px solid black;      
+     }
+    
+    #car {
+      width: 50px;
+      height: 80px;
+      position: absolute;
+      bottom: 10px;
+      background-color: red; /* Cambia el color a una imagen de auto real */
+    }
+  </style>
+</head>
+<body>
+
+<center>
+<h1 style="color: midnightblue;" > NO PUEDO DORMIR COÑO</h1>
+</center>
+
+<center>
+<div id="container">
+  <div id="car"></div>
+</div>
+
+<script>
+  let carPosition = 200;
+
+  document.onkeydown = function(e) {
+    switch (e.keyCode) {
+      case 37:
+        moveLeft();
+        break;
+      case 39:
+        moveRight();
+        break;
+    }
+  };
+
+  function moveLeft() {
+    if (carPosition > 0) {
+      carPosition -= 10;
+      document.getElementById("car").style.left = carPosition + "px";
+    }
+  }
+
+  function moveRight() {
+    if (carPosition < 450) {
+      carPosition += 10;
+      document.getElementById("car").style.left = carPosition + "px";
+    }
+  }
+  
+</script>
+</center>
+
+</body>
+</html>

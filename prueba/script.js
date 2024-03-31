@@ -11,4 +11,5 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('message').innerHTML = 'Intenta de nuevo. El número era 8.';
       }
     });
-  });  
+  });
+  

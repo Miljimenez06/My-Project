@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url('/imagenes/cora.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta a tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    font-family: Arial, sans-serif;
+}
+
+.contenedor {
+    /*background-color: aqua;*/
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p {
+    font-size: xx-large;
+    padding: 15%;
+}
+
+button {
+    font-size: xx-large;
+    padding: 0.75em;
+}
+
+#yesBtn {
+    transform: translate(-100%, 0);
+}
+
+#noBtn {
+    position: absolute;
+}
